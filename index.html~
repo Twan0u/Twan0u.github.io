@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="fr" ng-app="myApp" ng-controller="globalCtrl"> 
+    <head>
+       <meta charset="utf-8">  
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Antoine Lambert - Photographie</title>
+       <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<title>{{webTab}}</title>
+
+    </head>
+  <body>
+
+	<div ng-view></div>
+        
+
+
+
+        <!--Footer-->
+        <footer id="footer" class="footer">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                        <div class="main-footer">
+
+                            <div class="social">
+                                <a href="https://www.facebook.com/ant.lamb.al"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/twan0u_/"><i class="fa fa-instagram"></i></a> 
+				Antoine Lambert 
+
+				
+                            </div>
+                           0032/498.19.49.75 - ant.lamb.al@gmail.com
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.4/angular-route.min.js"></script>
+   <script type="text/javascript" src="js/web.js"></script>
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
