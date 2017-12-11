@@ -59,6 +59,11 @@ text-align: justify;
 	width: 100%;
 }
 
+	h2{
+		color: #6B6B6B;
+	font-size: 200%;
+	}
+
 #portfolio img{
 	float: left;
    	width: 23%;
