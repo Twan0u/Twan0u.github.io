@@ -12,12 +12,31 @@ body,html {
 	font-family: 'Spectral SC', serif;
 	font-size: 20px;
 }
+
+#signature{
+	width:20%;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+}
+path{
+	fill : none;
+	stroke-dasharray:5000;
+	animation-delay: 2s;
+	animation: dash 2s cubic-bezier(0,0.23,1,.1) forwards;
+}
+
 .center{
 	text-align: center;
 	color: #F5F5F5;
 	width: 50%;
 	margin: auto auto;
+}
 
+
+.center{
+	display: block;
+	margin:auto;
 }
 
 .parallax {
@@ -30,50 +49,36 @@ body,html {
 	background-size: cover;
 }
 
-.logo{
-	width: 400px;
-	padding: 20px;
-	top: 0;
-	left: 0;
-}
-
-.title{
-	border-top: solid white 4px;
-	border-bottom: solid white 4px;
-}
-
 #about{
 	padding:4%;
 text-align: justify;
 }
+
 #about:after{
     content: "";
     display: table;
     clear: both;
 }
+
 .column {
     float: left;
     width: 45%;
     padding: 15px;
 }
+
 #about img{
 	width: 100%;
 }
 
-	h2{
-		color: #6B6B6B;
+h2{
+	color: #6B6B6B;
 	font-size: 200%;
-	}
+}
 #portfolio img{
 		width: 100%;
 		padding:0;
 		margin: 0 auto;
 }
-/*#portfolio img{
-	float: left;
-   	width: 23%;
-    	margin: 1%;
-}*/
 #portfolio:after{
     content: "";
     display: table;
@@ -84,17 +89,12 @@ footer{
 	text-align: center;
 }
 
-path{
-	fill : none;
 
-	stroke-dasharray:5000;
-	animation: dash 3s cubic-bezier(0,0.23,1,.1) forwards;
-}
 
 @keyframes dash {
 	0% {
 		fill: none;
-	    stroke-dashoffset: 5000;
+	   stroke-dashoffset: 5000;
 	  }
 	  100% {
 			fill : #fff;
