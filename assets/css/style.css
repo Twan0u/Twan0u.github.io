@@ -22,7 +22,6 @@ body,html {
 path{
 	fill : none;
 	stroke-dasharray:5000;
-	animation-delay: 2s;
 	animation: dash 2s cubic-bezier(0,0.23,1,.1) forwards;
 }
 
@@ -88,8 +87,6 @@ footer{
 	margin:50px;
 	text-align: center;
 }
-
-
 
 @keyframes dash {
 	0% {
