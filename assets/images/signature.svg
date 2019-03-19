@@ -1,3 +1,0 @@
-Q1 : "Losers of life".replace(/(\w)\w*/g,'$1').split(" ").join("");
-
-
