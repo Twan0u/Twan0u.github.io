@@ -29,8 +29,6 @@
          d="m 80.229489,171.34673 v 10.96764 l 7.350162,5.48382 7.350171,-5.48382 z"
          id="rect819-6"
          inkscape:connector-curvature="0" />
-
-
          <rect
             style="opacity:1;fill:#3fad90;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
             id="rect819-3"
@@ -39,7 +37,6 @@
             x="136.78001"
             y="111.48881"
             transform="matrix(0.80150697,0.59798543,0,1,0,0)" />
-
             <rect
                style="opacity:0.97600002;fill:#3fad90;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
                id="rect819"
@@ -49,14 +46,6 @@
                y="250.04134"
                transform="matrix(0.80150697,0.59798543,0,1,0,0)">
             </rect>
-            <animateTransform id="translate"
-                         attributeName="transform"
-                         attributeType="XML"
-                         type="translate"
-                         begin= "0"
-                         dur="2s"
-                         values="0;0,3;0"
-                         repeatCount="indefinite"/>
      </g>
     <g id="down">
 
@@ -99,23 +88,6 @@
                         x="2.5883648"
                         y="250.04109"
                         transform="matrix(0.80150697,0.59798543,0,1,0,0)" />
-
-
-      <animateTransform id="translate"
-                   attributeName="transform"
-                   attributeType="XML"
-                   type="translate"
-                   begin= "0"
-                   dur="2s"
-                   values="0;0,-3;0"
-                   repeatCount="indefinite"/>
     </g>
-
-
-
-
-
-
-
   </g>
 </svg>
