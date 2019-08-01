@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,24 +20,43 @@
                   <div class="logo">
                     <a href="#"><img src="logo.png"></img></a>
                   </div>
-                  <div class="nav-wrapper sticky fr" lang="fr">
+                  <div class="nav-wrapper sticky fr lang" >
                         <ul>
                               <li><a href="#nav">Accueil</a></li>
                               <li><a href="#services">Lpg/Gpl</a></li>
                               <li><a href="#services">Spiritueux</a></li>
                               <li><a href="#about">À Propos</a></li>
                               <li><a href="#contact">Contact</a></li>
-                              <li>Fr/Ndls</li>
+                              <li>
+                                <a onclick="language('en')">Engl</a>|
+                                <a onclick="language('ndls')">Ndls</a>
+                              </li>
                         </ul>
                   </div>
-                  <div class="nav-wrapper sticky en">
+                  <div class="nav-wrapper sticky en lang">
                         <ul>
                               <li><a href="#nav">Home</a></li>
                               <li><a href="#services">Lpg/Gpl</a></li>
                               <li><a href="#services">Alcool</a></li>
                               <li><a href="#about">about</a></li>
                               <li><a href="#contact">Contact</a></li>
-                              <li>Fr/Ndls</li>
+                              <li>
+                                <a onclick="language('fr')">Fran</a>|
+                                <a onclick="language('ndls')">Ndls</a>
+                              </li>
+                        </ul>
+                  </div>
+                  <div class="nav-wrapper sticky ndls lang">
+                        <ul>
+                              <li><a href="#nav">Home</a></li>
+                              <li><a href="#services">Lpg/Gpl</a></li>
+                              <li><a href="#services">Alcool</a></li>
+                              <li><a href="#about">Wy</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                              <li>
+                                <a onclick="language('fr')">Fran</a>|
+                                <a onclick="language('en')">Engl</a>
+                              </li>
                         </ul>
                   </div>
             </nav>
@@ -50,11 +69,17 @@
         <div class="cont primary-color">
           <div class="row">
             <div class="column-66 text-right">
-              <h2><b>ROULER AU LPG,</b></h2>
-              <p class="text-center"><span style = "color:white">UN CHOIX ECONOMIQUE et ECOLOGIQUE</span>. Le LPG (ou GPL pour Gaz de pétrole liquéfié) est de plus en plus utilisé comme carburant.
+              <h2 class = "fr lang"><b>ROULER AU GPL,</b></h2>
+              <h2 class = "en lang"><b>DRIVE WITH LPG,</b></h2>
+              <h2 class = "ndls lang"><b>Rijd met LPG,</b></h2>
+              <p class="text-center fr lang"><span style = "color:white">UN CHOIX ECONOMIQUE et ECOLOGIQUE</span>. Le LPG (ou GPL pour Gaz de pétrole liquéfié) est de plus en plus utilisé comme carburant.
 Ses nombreux avantages économiques et écologiques nous ont convaincus depuis longtemps et séduisent aujourd'hui, avec raison, toujours
 plus de conducteurs.</p>
-              <button class="button">En Savoir Plus</button>
+              <p class="text-center en lang"><span style = "color:white">...</span>. TODO</p>
+              <p class="text-center ndls lang"><span style = "color:white">...</span>. TODO</p>
+              <button class="button fr lang">En Savoir Plus</button>
+              <button class="button en lang">Read more</button>
+              <button class="button ndls lang"> ...</button>
             </div>
             <div class="column-33">
                 <img src="Lpg.jpg" width="335" height="471">
@@ -68,9 +93,19 @@ plus de conducteurs.</p>
               <img src="spiritueumini.jpg" alt="App" width="335" height="471">
             </div>
             <div class="column-66 text-left">
-              <h2><b>Spiritueux</b></h2>
-              <p>boris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <button class="button">En Savoir Plus</button>
+
+              <h2 class = "fr lang"><b>Spiritueux</b></h2>
+              <p class = "fr lang">boris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <button class="button fr lang">En Savoir Plus</button>
+
+              <h2 class = "en lang"><b>Alcool</b></h2>
+              <p class = "en lang">boris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <button class="button en lang">...</button>
+
+              <h2 class = "ndls lang"><b>...</b></h2>
+              <p class = "ndls lang">boris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <button class="button ndls lang">...</button>
+
             </div>
           </div>
         </div>
@@ -80,7 +115,10 @@ plus de conducteurs.</p>
 
 
       <div class="footer" id="contact">
-        <h2>Footer</h2>
+        <h2 class="en lang">Footer</h2>
+        <h2 class="fr lang">Pied de Page</h2>
+        <h2 class="ndls lang">bottom</h2>
       </div>
 </body>
+<script type="text/javascript" src="assets/js/script.js"></script>
 </html>

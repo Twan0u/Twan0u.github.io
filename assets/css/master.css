@@ -13,7 +13,10 @@
 }
 
 .en{
-  visibility: hidden;
+  display: none;
+}
+.ndls{
+  display: none;
 }
 
 .row:after {
