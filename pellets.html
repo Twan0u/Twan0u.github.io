@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Import-Export Europe</title>
+      <link rel="stylesheet" href="assets/css/master.css">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+      <style>
+      .jumbotron {
+            background: url(assets/img/pellets/garda21.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Quicksand', sans-serif;
+            height: 100%; /*500px*/
+      }
+
+      .pp .columns {
+        float: left;
+        width: 33.3%;
+        padding: 8px;
+      }
+
+      .pp .price {
+        list-style-type: none;
+        border: 1px solid #eee;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      .pp .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+      }
+
+      .pp .price .header {
+        background-color: #111;
+        background-color:#617B57;
+        color: white;
+        font-size: 25px;
+      }
+
+      .pp .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .pp .price .grey {
+        background-color: #ddd;
+        font-size: 20px;
+      }
+
+      .pp .button {
+        background-color: #617B57;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .pp .columns {
+          width: 100%;
+        }
+      }
+</style>
+</head>
+<body>
+      <div class="container jumbotron">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                    <a href="#"><img src="logo.png"></img></a>
+                  </div>
+                  <div class="nav-wrapper sticky fr lang" >
+                        <ul>
+                              <li><a href="#nav">Accueil</a></li>
+                              <li><a href="#grada18">Grada18</a></li>
+                              <li><a href="#grada21">Grada21</a></li>
+                              <li><a href="#grada28">Grada28</a></li>
+                              <li><a href="#pricing">Prix</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                              <li>
+                                <a onclick="language('en')">En</a><!--|
+                                <a onclick="language('ndls')">Nl</a>-->
+                              </li>
+                        </ul>
+                  </div>
+                  <div class="nav-wrapper sticky en lang">
+                        <ul>
+                              <li><a href="#nav">Home</a></li>
+                              <li><a href="#grada18">Grada18</a></li>
+                              <li><a href="#grada21">Grada21</a></li>
+                              <li><a href="#grada28">Grada28</a></li>
+                              <li><a href="#pricing">Prcing</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                              <li>
+                                <a onclick="language('fr')">Fr</a><!--|
+                                <a onclick="language('ndls')">Nl</a>-->
+                              </li>
+                        </ul>
+                  </div>
+                  <div class="nav-wrapper sticky ndls lang">
+                        <ul>
+                              <li><a href="#nav">Home</a></li>
+                              <li><a href="#grada18">Grada18</a></li>
+                              <li><a href="#grada21">Grada21</a></li>
+                              <li><a href="#grada28">Grada28</a></li>
+                              <li><a href="#pricing">prijsstelling</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                              <li>
+                                <a onclick="language('fr')">Fr</a>|
+                                <a onclick="language('en')">En</a>
+                              </li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
+      <!-- fin Menu et jumbotron-->
+
+      <!-- début Zig Zag-->
+      <div class="container" id="grada18">
+
+        <div class="cont primary-color">
+          <div class="row">
+            <div class="column-66 text-right">
+              <h2><b>Grada 18</b></h2>
+
+
+              <p class="text-center fr lang"><span style = "color:white">LA CHALEUR QUI PREND SOIN DE VOTRE MAISON.</span> Ce qui est normalement considéré comme optionnel, ce sont des accessoires indispensables chez MAGIKAL. Chaque poêle à granulés de la marque MAGIKAL est pourvu de tous les composants nécessaires pour un fonctionnement parfait.</p>
+              <button class="button fr lang" onclick="location.href='#pricing'">En Savoir Plus</button>
+
+              <p class="text-center en lang"><span style = "color:white">HEAT THAT THINKS AT YOUR HOME</span> For MAGIKAL the optional are indispensable accessories. Every GARDA stoves is built with all components that are necessary to a correct installation.</p>
+              <button class="button en lang" onclick="location.href='#pricing'">Read more</button>
+
+              <p class="text-center ndls lang"><span style = "color:white">...</span>. TODO</p>
+              <button class="button ndls lang" onclick="location.href='#pricing'"> ...</button>
+
+            </div>
+            <div class="column-33">
+                <img src="assets/img/pellets/sqrgarda18.jpg" width="335" height="471">
+            </div>
+          </div>
+        </div>
+
+        <div class="cont" id ="grada21">
+          <div class="row">
+            <div class="column-33">
+              <img src="assets/img/pellets/sqrgarda21.jpg" alt="App" width="335" height="471">
+            </div>
+            <div class="column-66 text-left">
+              <h2><b>Grada 21</b></h2>
+
+              <p class = "fr lang"><span>LA CHALEUR QUI PREND SOIN DE VOTRE MAISON.</span> GARDA 21 kW peut chauffer jusqu’à 170 mètres carrés, avec un rendement de 94%. La carte électronique du poêle hydro peut être jumelé avec d’autres sources de chauffage et, à travers le kit E.C.S., produire de l’eau chaude sanitaire instantanée. </p>
+              <button class="button fr lang" onclick="location.href='#pricing'">En Savoir Plus</button>
+
+              <p class = "en lang"><span>HEAT THAT IMPROVE THE HOUSE. </span>GARDA 21 kW is able to heating environments until 170 m2, with an effi ciency of 94%. The control unit can work with other heat sources. GARDA 21 kW can produce hot domestic water thank you to hydraulic kit installated within the product.</p>
+              <button class="button en lang" onclick="location.href='#pricing'">Read More</button>
+
+              <p class = "ndls lang">...</p>
+              <button class="button ndls lang" onclick="location.href='#pricing'">...</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="cont primary-color" id = "grada28">
+          <div class="row">
+            <div class="column-66 text-right">
+              <h2><b>Grada 28</b></h2>
+
+              <p class="text-center fr lang"><span style = "color:white">UN SEUL FOYER
+POUR UNE GRANDE MAISON. </span>GARDA 28 kW peut se vanter de 23 kW de puissance
+restituée à l’eau, ce qui peut aisément chauffer 220 m²,
+et, grâce à son grand réservoir, d’une grande autonomie
+de fonctionnement, en assurant une chaleur homogène
+pendant plusieurs heures. </p>
+              <p class="text-center en lang"><span style = "color:white">AN ONLY FIRE FOR A BIG HOUSE. </span>GARDA 28 kW with as much as 23 kW transferred into
+heating water can comfortably heat houses until 220 m².
+The large pellet tank guaranties a long autonomy and a homogenous heat throughout the house for different hours.</p>
+              <p class="text-center ndls lang"><span style = "color:white">...</span>. TODO</p>
+
+              <button class="button fr lang" onclick="location.href='#pricing'">En Savoir Plus</button>
+              <button class="button en lang" onclick="location.href='#pricing'">Read more</button>
+              <button class="button ndls lang" onclick="location.href='#pricing'"> ...</button>
+            </div>
+            <div class="column-33">
+                <img src="assets/img/pellets/sqrgarda28.jpg" width="335" height="471">
+            </div>
+          </div>
+        </div>
+
+      </div>
+        <!-- fin Zig Zag-->
+        <!--Debut Pricing-->
+        <div class = "cont pp" id="pricing">
+          <div class="row">
+            <div class="columns">
+              <ul class="price">
+                <li class="header">Grada 18</li>
+                <li class="grey">380 m²</li>
+                <li>18 KW</li>
+                <li>3850 €</li>
+                <li class="grey"><a href="#" class="button">Commander</a></li>
+              </ul>
+            </div>
+
+            <div class="columns">
+              <ul class="price">
+                <li class="header">Grada 21</li>
+                <li class="grey">430 m²</li>
+                <li>21 KW</li>
+                <li>Programmable (Option)</li>
+                <li>4350 €</li>
+                <li class="grey"><a href="#" class="button">Commander</a></li>
+              </ul>
+            </div>
+
+            <div class="columns">
+              <ul class="price">
+                <li class="header">Grada 28</li>
+                <li class="grey">630 m²</li>
+                <li>28 KW</li>
+                <li>Programmable (Option)</li>
+                <li>Ventilateur Supp (Option)</li>
+                <li>Télécommande (Option)</li>
+                <li>Wifi (Option)</li>
+                <li>4700 €</li>
+                <li class="grey"><a href="#" class="button">Commander</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Pricing-->
+
+
+      <div class="footer" id="contact">
+        <h2 class="en lang">Footer</h2>
+        <h2 class="fr lang">Pied de Page</h2>
+        <h2 class="ndls lang">bottom</h2>
+      </div>
+</body>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</html>
