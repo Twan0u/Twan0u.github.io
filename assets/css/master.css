@@ -290,16 +290,7 @@ nav ul li a {
   width: 33.33333%;
   padding: 20px;
 }
-@media screen and (max-width: 1000px) {
-  .column-66,
-  .column-33 {
-    width: 100%;
-    text-align: center;
-  }
-  img {
-    margin: auto;
-  }
-}
+
 
 .button {
   border-radius: 12px;
@@ -352,7 +343,7 @@ nav ul li a {
     padding-left: 10%;
     padding-bottom: 3%;
     text-align: Left;
-
+    width:100%;
   }
 
   .footer .column {
@@ -417,4 +408,53 @@ nav ul li a {
         .pp .columns {
           width: 100%;
         }
+      }
+      @media screen and (max-width: 1000px) {
+        .column-66,
+        .column-33 {
+          width: 100%;
+          text-align: center;
+        }
+        img {
+          margin: auto;
+        }
+        h2{
+          font-size: 20px;
+        }
+        .button {
+          font-size: 12px;
+          padding: 8px 12px;
+          width: 100%;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        .cont{
+          margin-left: 0;
+          margin-right:0;
+          padding-left: 5%;
+          padding-right:5%;
+        }
+        .circle-icon {
+            background: var(--third-color);
+            margin: 10px;
+            padding:5px;
+            border-radius: 50%;
+          }
+
+          .footer {
+            padding-left: 3%;
+            padding-bottom: 3%;
+            text-align: Left;
+            width:100%;
+          }
+
+          .footer .column {
+            flex: 100%;
+            /*padding: 10px;*/
+          }
+
+          .footer .row {
+            display: block;
+          }
       }
